@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - MASTER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6; /* Improved line height for readability */
+        }
+
+        header {
+            background-color: #35424a; /* Dark grey header */
+            color: white;
+            padding: 20px; /* Reduced padding */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Adjusted for better prominence */
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem; /* Adjusted size for better readability */
+            margin-bottom: 20px;
+        }
+
+        .categories {
+            display: flex; /* Flexbox for layout */
+            justify-content: center; /* Center the categories */
+            margin-bottom: 40px; /* Space below categories */
+            margin-top: 15px;
+        }
+
+        .category {
+            background-color: #e9ecef; /* Light grey background */
+            border-radius: 10px;
+            padding: 15px 30px;
+            margin: 0 10px; /* Space between categories */
+            text-align: center;
+            transition: transform 0.3s; /* Smooth transition */
+            cursor: pointer; /* Change cursor to pointer */
+            color: #35424a; /* Dark grey text */
+            text-decoration: none; /* Remove underline */
+            font-weight: 500; /* Bold text */
+        }
+
+        .category:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .services-container {
+            padding: 60px 20px; /* Adjusted padding */
+            max-width: 1200px;
+            margin: 0 auto; /* Centering the container */
+            background-color: #fff; /* White background for contrast */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service {
+            margin-bottom: 40px;
+            text-align: center;
+            border: 1px solid #ccc; /* Border for each service */
+            border-radius: 10px;
+            padding: 20px; /* Padding inside service boxes */
+            transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .service:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+        }
+
+        .service h2 {
+            font-size: 1.8rem; /* Adjusted size for prominence */
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .service p {
+            font-size: 1rem; /* Adjusted size for better readability */
+            margin-bottom: 20px;
+        }
+
+        .service a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #35424a; /* Dark grey button */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .service a:hover {
+            background-color: #5a6d7e; /* Lighter grey on hover */
+        }
+
+        footer {
+            background-color: #35424a; /* Dark grey footer */
+            color: white;
+            padding: 20px; /* Adjusted padding */
+            text-align: center;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #00b8d4; /* Light blue on hover */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px; /* Reduced padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 2rem; /* Adjusted for smaller screens */
+            }
+
+            header p {
+                font-size: 1rem; /* Adjusted for smaller screens */
+            }
+
+            .service h2 {
+                font-size: 1.5rem; /* Adjusted size for smaller screens */
+            }
+
+            .service p {
+                font-size: 0.9rem; /* Adjusted size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <p>Explore the range of services we offer to our valued customers.</p>
+    </header>
+
+    <div class="categories">
+        <a href="termsofservice.html" class="category">Terms of Service</a>
+        <a href="pricing.html" class="category">Pricing</a>
+    </div>
+
+    <div class="services-container">
+        <div class="service">
+            <h2>Personalized Stitching</h2>
+            <p>Custom stitching services tailored to fit your unique style and preferences.</p>
+            <a href="PersonalizedStitching.html">Learn More</a>
+        </div>
+
+        <div class="service">
+            <h2>Professional Alterations</h2>
+            <p>Expert alterations to ensure a perfect fit for your garments, enhancing your look.</p>
+            <a href="ProfessionalAlterations.html">Learn More</a>
+        </div>
+
+        <div class="service">
+            <h2>Bespoke Tailoring</h2>
+            <p>Tailoring services for all occasions, ensuring you look your best with custom designs.</p>
+            <a href="BespokeTailoring.html">Learn More</a>
+        </div>
+
+        <div class="service">
+            <h2>Fabric Selection Assistance</h2>
+            <p>Guidance on selecting the best fabrics for your needs, ensuring quality and style.</p>
+            <a href="FabricSelectionAssistance.html">Learn More</a>
+        </div>
+
+        <div class="service">
+            <h2>Fashion Consultation</h2>
+            <p>Personalized fashion advice to help you choose the best styles for your body type and preferences.</p>
+            <a href="FashionConsultation.html">Learn More</a>
+        </div>
+
+        <div class="service">
+            <h2>Repairs and Restorations</h2>
+            <p>Repair and restoration services to breathe new life into your favorite garments.</p>
+            <a href="RepairsandRestorations.html">Learn More</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MASTER. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
+

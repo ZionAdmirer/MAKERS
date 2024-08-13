@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER - Crafting Your Style</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6; 
+            overflow-x: hidden; 
+        }
+
+        header {
+            background-color: #35424a; 
+            color: white;
+            padding: 20px 20px; 
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem; 
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem; 
+            margin-bottom: 20px;
+        }
+
+        .hero-image {
+            background-image: url('hero-image.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 400px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-text {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .hero-text h2 {
+            font-size: 2rem; 
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ccc; 
+            color: #35424a; 
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem; 
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.3s; 
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #b0b0b0; 
+            transform: scale(1.05); 
+        }
+
+        .services {
+            padding: 60px 20px; 
+            text-align: center;
+            background-color: #fff; 
+        }
+
+        .services h2 {
+            font-size: 2rem; 
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 30px; 
+        }
+
+        .service {
+            background-color: #f9f9f9; 
+            padding: 20px; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s; 
+        }
+
+        .service:hover {
+            transform: translateY(-5px); 
+        }
+
+        .service h3 {
+            font-size: 1.5rem; 
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .about {
+            padding: 60px 20px; 
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            font-size: 2rem; 
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .about p {
+            font-size: 1rem; 
+            line-height: 1.6; 
+        }
+
+        .testimonials {
+            background-color: #e9ecef; 
+            color: #333;
+            padding: 60px 20px; 
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2rem; 
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+        }
+
+        .testimonial p {
+            font-size: 1rem; 
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .testimonial h4 {
+            font-size: 0.9rem; 
+            font-weight: 500;
+        }
+
+        .blog-section {
+            padding: 60px 20px; 
+            text-align: center;
+        }
+
+        .blog-section h2 {
+            font-size: 2rem; 
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .blog-section p {
+            font-size: 1rem; 
+            margin-bottom: 20px;
+        }
+
+        .blog-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ccc; 
+            color: #35424a; 
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem; 
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .blog-button:hover {
+            background-color: #b0b0b0; 
+        }
+
+        .contact {
+            padding: 60px 20px; 
+            text-align: center;
+            background-color: #e9ecef; 
+        }
+
+        .contact h2 {
+            font-size: 2rem; 
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .contact p {
+            font-size: 1rem; 
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            padding: 10px;
+            background-color: #ccc; 
+            color: #35424a; 
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact button:hover {
+            background-color: #b0b0b0; 
+        }
+
+        footer {
+            background-color: #35424a; 
+            color: white;
+            padding: 20px; 
+            text-align: center;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #00b8d4; 
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px; 
+            }
+
+            h1 {
+                font-size: 2rem; 
+            }
+
+            header p {
+                font-size: 1rem; 
+            }
+
+            .hero-image {
+                height: 300px; 
+            }
+
+            .hero-text {
+                padding: 15px;
+            }
+
+            .hero-text h2 {
+                font-size: 1.5rem; 
+            }
+
+            .services h2,
+            .about h2,
+            .testimonials h2,
+            .blog-section h2,
+            .contact h2 {
+                font-size: 1.5rem; 
+            }
+
+            .service h3,
+            .about p,
+            .testimonial p,
+            .blog-section p,
+            .contact p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MAKERS</h1>
+        <p>Crafting Your Style with Precision and Passion</p>
+        <div class="nav-buttons">
+            <a href="aboutus.html" class="btn">About Us</a>
+            <a href="services.html" class="btn">Our Services</a>
+            <a href="blog.html" class="btn">Blog</a>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </header>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2>Expert Stitching and Clothing Services</h2>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>Personalized Stitching</h3>
+                <p>Custom stitching services to fit your unique style.</p>
+            </div>
+            <div class="service">
+                <h3>Professional Alterations</h3>
+                <p>Expert alterations for a perfect fit every time.</p>
+            </div>
+            <div class="service">
+                <h3>Bespoke Tailoring</h3>
+                <p>Tailoring services for all occasions, ensuring you look your best.</p>
+            </div>
+            <div class="service">
+                <h3>Fabric Selection</h3>
+                <p>Guidance on selecting the best fabrics for your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>At MASTER, we are dedicated to providing top-notch tailoring and stitching services, ensuring customer satisfaction with every stitch. Our experienced team combines traditional craftsmanship with modern techniques to create garments that reflect your unique style.</p>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"Excellent service and beautiful craftsmanship!"</p>
+            <h4>- Jane Doe</h4>
+        </div>
+        <div class="testimonial">
+            <p>"I love my new dress! The fit is perfect!"</p>
+            <h4>- Sarah Smith</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The team at MASTER is incredibly talented!"</p>
+            <h4>- John Appleseed</h4>
+        </div>
+    </section>
+
+    <section class="blog-section" id="blog">
+        <h2>Latest Posts</h2>
+        <p>Check out our latest posts for fashion tips, fabric care, and sewing techniques!</p>
+        <a href="blog.html" class="blog-button">Visit our blog</a>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to schedule a consultation, please reach out to us!</p>
+        <p>Email: info@master.com | Phone: (123) 456-7890</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MASTER. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

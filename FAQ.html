@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - MASTER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6; /* Improved line height for readability */
+        }
+
+        header {
+            background-color: #35424a; /* Dark grey header */
+            color: white;
+            padding: 20px; /* Reduced padding */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Adjusted for better prominence */
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem; /* Adjusted size for better readability */
+            margin-bottom: 20px;
+        }
+
+        .faq-container {
+            max-width: 800px; /* Maximum width for the FAQ section */
+            margin: 40px auto; /* Centering the container */
+            background-color: #fff; /* White background for contrast */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px; /* Padding inside the container */
+        }
+
+        .faq-item {
+            margin-bottom: 20px; /* Space between FAQ items */
+            border-bottom: 1px solid #ccc; /* Bottom border for separation */
+            padding: 10px 0; /* Padding for each FAQ item */
+        }
+
+        .faq-item:last-child {
+            border-bottom: none; /* Remove bottom border for the last item */
+        }
+
+        .faq-question {
+            font-weight: bold; /* Bold font for questions */
+            cursor: pointer; /* Pointer cursor for questions */
+            transition: color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .faq-question:hover {
+            color: #35424a; /* Change color on hover */
+        }
+
+        .faq-answer {
+            display: none; /* Initially hide answers */
+            margin-top: 10px; /* Space above answers */
+        }
+
+        footer {
+            background-color: #35424a; /* Dark grey footer */
+            color: white;
+            padding: 20px; /* Adjusted padding */
+            text-align: center;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #00b8d4; /* Light blue on hover */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px; /* Reduced padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 2rem; /* Adjusted for smaller screens */
+            }
+
+            header p {
+                font-size: 1rem; /* Adjusted for smaller screens */
+            }
+
+            .faq-container {
+                padding: 15px; /* Adjusted padding for smaller screens */
+            }
+
+            .faq-question {
+                font-size: 1.2rem; /* Adjusted font size for smaller screens */
+            }
+
+            .faq-answer {
+                font-size: 1rem; /* Adjusted font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Your questions answered!</p>
+    </header>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">What services do you offer?</div>
+            <div class="faq-answer">We offer personalized stitching, professional alterations, bespoke tailoring, fabric selection assistance, fashion consultations, and repairs/restorations.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I book a service?</div>
+            <div class="faq-answer">You can book a service by contacting us through our website or by calling our customer service number.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What is your cancellation policy?</div>
+            <div class="faq-answer">If you wish to cancel your order, please notify us at least 24 hours in advance to avoid any cancellation fees.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you offer custom tailoring?</div>
+            <div class="faq-answer">Yes, we specialize in custom tailoring to fit your unique style and preferences.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I contact you for further questions?</div>
+            <div class="faq-answer">You can contact us via our contact page, or reach out through our social media channels.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What types of fabrics do you work with?</div>
+            <div class="faq-answer">We work with a wide range of fabrics including cotton, silk, linen, wool, and synthetic materials. Our team can help you choose the best fabric for your needs.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How long does it take to complete an alteration?</div>
+            <div class="faq-answer">The time required for alterations depends on the complexity of the work. Typically, simple alterations take about 1-2 weeks, while more complex requests may take longer.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I bring my own fabric for custom orders?</div>
+            <div class="faq-answer">Yes, you can bring your own fabric for custom orders. Our team will assist you in ensuring it is suitable for the desired service.</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MASTER. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

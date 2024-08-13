@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MASTER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6; /* Improved line height for readability */
+        }
+
+        header {
+            background-color: #35424a; /* Dark grey header */
+            color: white;
+            padding: 20px 20px; /* Reduced padding */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Adjusted for better prominence */
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem; /* Adjusted size for better readability */
+            margin-bottom: 20px;
+        }
+
+        .about-container {
+            padding: 60px 20px; /* Adjusted padding */
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff; /* White background for contrast */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .about-container h2 {
+            font-size: 2rem; /* Adjusted size for prominence */
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .about-container p {
+            font-size: 1rem; /* Adjusted size for better readability */
+            margin-bottom: 20px;
+            line-height: 1.6; /* Improved line height for readability */
+        }
+
+        .values, .process, .history {
+            padding: 60px 20px; /* Adjusted padding */
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #e9ecef; /* Light grey background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Space between sections */
+        }
+
+        .values h2, .process h2, .history h2 {
+            font-size: 2rem; /* Adjusted size for prominence */
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .values p, .process p, .history p {
+            font-size: 1rem; /* Adjusted size for better readability */
+            margin-bottom: 20px;
+            line-height: 1.6; /* Improved line height for readability */
+        }
+
+        .team {
+            padding: 60px 20px; /* Adjusted padding */
+            text-align: center;
+        }
+
+        .team h2 {
+            font-size: 2rem; /* Adjusted size for prominence */
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between team members */
+        }
+
+        .team-member {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px; /* Fixed width for uniformity */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .team-member:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%; /* Circular images */
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 1.2rem; /* Adjusted size for better balance */
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 0.9rem; /* Adjusted size for better readability */
+        }
+
+        footer {
+            background-color: #35424a; /* Dark grey footer */
+            color: white;
+            padding: 20px; /* Adjusted padding */
+            text-align: center;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #00b8d4; /* Light blue on hover */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px; /* Reduced padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 2rem; /* Adjusted for smaller screens */
+            }
+
+            header p {
+                font-size: 1rem; /* Adjusted for smaller screens */
+            }
+
+            .about-container h2,
+            .values h2,
+            .process h2,
+            .history h2,
+            .team h2 {
+                font-size: 1.5rem; /* Adjusted size for smaller screens */
+            }
+
+            .about-container p,
+            .values p,
+            .process p,
+            .history p,
+            .team-member p {
+                font-size: 0.9rem; /* Adjusted size for smaller screens */
+            }
+
+            .team-members {
+                flex-direction: column; /* Stack team members on smaller screens */
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <p>Learn more about our mission, values, and team.</p>
+    </header>
+
+    <div class="about-container">
+        <h2>Our Mission</h2>
+        <p>At MASTER, we are dedicated to providing top-notch tailoring and stitching services, ensuring customer satisfaction with every stitch. Our experienced team combines traditional craftsmanship with modern techniques to create garments that reflect your unique style.</p>
+    </div>
+
+    <section class="values">
+        <h2>Our Values</h2>
+        <p>We believe in quality, integrity, and customer satisfaction. Our commitment to excellence drives us to deliver the best possible service to our clients.</p>
+        <p>We value creativity and innovation, constantly seeking new ways to enhance our offerings and meet the evolving needs of our customers.</p>
+    </section>
+
+    <section class="process">
+        <h2>Our Process</h2>
+        <p>Our process begins with understanding your needs and preferences. We take the time to consult with you to ensure we capture your vision.</p>
+        <p>Next, we select the finest materials and begin the crafting process, ensuring every detail is perfect. Finally, we conduct thorough quality checks to ensure your satisfaction.</p>
+    </section>
+
+    <section class="history">
+        <h2>Our History</h2>
+        <p>Founded in 2010, MASTER has grown from a small tailoring shop into a well-respected name in the fashion industry. Our commitment to quality and customer satisfaction has allowed us to expand our services and reach a wider audience.</p>
+        <p>We believe in the power of clothing to express individuality, and we work tirelessly to ensure that each piece we create is a reflection of our clients' unique styles.</p>
+    </section>
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="team-member1.jpg" alt="Team Member 1"> <!-- Replace with actual image -->
+                <h3>Jane Doe</h3>
+                <p>Head Tailor</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member2.jpg" alt="Team Member 2"> <!-- Replace with actual image -->
+                <h3>John Smith</h3>
+                <p>Senior Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member3.jpg" alt="Team Member 3"> <!-- Replace with actual image -->
+                <h3>Sarah Johnson</h3>
+                <p>Customer Service</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member4.jpg" alt="Team Member 4"> <!-- Replace with actual image -->
+                <h3>Michael Brown</h3>
+                <p>Fabric Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MASTER. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
+
